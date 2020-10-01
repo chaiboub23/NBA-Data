@@ -19,6 +19,12 @@ df3 = df2['college'].value_counts()
 df4 = df3.head(28)
 df5 = df4.iloc[1:]
 # Plot the graph
-df5.plot(kind='bar', x='college', y='count', title='Which College has the Most First Overall Picks', color='red')
+df5.plot(
+    kind='bar',
+    x='college',
+    y='count',
+    title='Which College has the Most First Overall Picks',
+    color='red'
+)
 # Show the graph
 plt.show()
