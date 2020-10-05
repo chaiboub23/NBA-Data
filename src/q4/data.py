@@ -4,7 +4,6 @@ plt.close('all')
 pd.set_option('display.max_columns', 500)
 plt.gcf().subplots_adjust(bottom=0.15)
 df = pd.read_csv('../all_seasons.csv')
-print(df['player_height'].mean())
 # NOTE: Average height is 6'7", or 79", or 200.8 cm.
 above = df['player_height']>=200.8
 df1 = df[above]
