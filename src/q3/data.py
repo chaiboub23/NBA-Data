@@ -1,11 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 plt.close('all')
-pd.set_option('display.max_columns', 500)
-plt.gcf().subplots_adjust(bottom=0.15)
 df = pd.read_csv('../all_seasons.csv')
-print(df['pts'].mean())
-# NOTE: Average is 8.12648721399731 points or rounded 8 points.
 above = df['pts']>=15
 df1 = df[above]
 df2 = df1[['team_abbreviation']]
